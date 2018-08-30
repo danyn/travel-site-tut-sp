@@ -1,0 +1,9 @@
+.reveal{
+	transition: all 2s;
+	transform: scale(1);
+	&--hidden{
+		transform: scale(1.2);
+		opacity: 0;
+	}
+	
+}

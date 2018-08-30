@@ -1,0 +1,21 @@
+.btn{
+	display: inline-block;
+	background: $blue;
+	color:white;
+	padding:.75rem 1.2rem;
+	text-decoration: none;
+	border-radius:3px;
+	&:hover{
+		background: color($blue lightness(50%))
+	}
+	&--orange{
+		background: $orange;
+		&:hover{
+			background: color($orange lightness(50%))
+		}
+	}
+	&--lg{
+		font-size:1.25em;
+		font-weight: 2;
+	}
+}

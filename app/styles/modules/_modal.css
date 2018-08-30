@@ -1,0 +1,45 @@
+.modal{
+	display: flex;
+	align-items: center;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 5;
+	background-color: rgba(255,255,255,0.95);
+	opacity: 0;
+	visibility: hidden;
+	transform: scale(1.1);
+	transition: all .3s;
+
+	&--visible{
+		opacity: 1;
+		visibility: visible;
+		transform: scale(1);
+	}
+
+	&__container{
+		max-width: 600px;
+		margin: 0 auto;
+		padding:0 1em;
+		>*{
+			margin-top: 0 !important;
+			margin-bottom:36px !important;
+		}
+	}
+
+	&__body{
+		font-size:1.2rem;
+		@mixin smallScreen{
+			font-size:1.4rem;
+		}
+	}
+
+	&__close{
+		font-size:1.5rem;
+		position: absolute;
+		top:1.2rem;
+		right:1.6rem;
+	}
+}

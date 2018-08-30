@@ -1,0 +1,76 @@
+/* Hero Component */
+
+$blue: #2f5572;
+$orange: #d59542;
+$vertical-spacing : 1.7rem;
+
+.large-hero {
+
+	position: relative;
+	@mixin fullWidth{};
+	border-bottom:10px solid $blue;
+
+	*{
+		margin:0;
+	}
+	
+	&__text-content {
+		padding-top: 70px;
+		@mixin mediumScreen{
+			padding-top: 0;
+		}
+		position: absolute;
+		text-align: center;	
+		width: 100%;
+		top:50%;
+		transform: translateY(-50%);
+	}
+
+	&__title {
+		color: $blue;
+		font-weight: 300;
+		font-size:2.1em;
+		@mixin smallScreen{
+			font-size: 2.875rem;
+		}
+		@mixin mediumScreen{
+			font-size: 3rem;
+		}
+		@mixin largeScreen{
+			font-size: 3.5rem;
+		}
+	}
+
+	&__subtitle {
+		color: $blue;
+		font-weight: 100;
+		font-size: 1.5em;
+		margin-bottom: $vertical-spacing;
+		@mixin smallScreen{
+			font-size: 2rem;
+		}
+		@mixin mediumScreen{
+			font-size: 2.2rem;
+		}
+		@mixin largeScreen{
+			font-size: 2.7rem;
+		}
+	}
+
+	&__statement {
+		color: white;
+		width: 20rem;
+		font-weight: 100;
+		font-size: 1.25rem;
+		text-shadow: 1px 1px #a5989887;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: $vertical-spacing;
+	}
+
+	&__cta {
+
+	}
+}
+
+

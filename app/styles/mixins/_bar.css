@@ -1,0 +1,9 @@
+@define-mixin bar{
+			position: absolute;
+			left:0;
+			width:30px;
+			height:5px;
+			background: white;
+			transition: all .3s;
+			@mixin-content;
+}

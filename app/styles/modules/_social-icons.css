@@ -1,0 +1,35 @@
+.social-icons{
+	text-align: center;
+	max-width:200px;
+	margin: 0 auto;
+	@mixin smallScreen{
+		max-width: unset;
+	}
+
+	&__icon{
+	text-align: center;
+	display: inline-block;
+	width:48%;
+	margin: .25%;
+	position: relative;
+	@mixin smallScreen{
+		width:78px;
+	}
+		&__aspect{
+			display: inline-block;
+			width:100%;
+			padding-top: 100%;
+			height: 0;
+			border-radius: 4px;
+			background-color: $orange;
+		}
+
+
+	.svg-icon{
+		position: absolute;
+		top:50%;
+		left:50%;
+		transform: translate(-50%, -50%)
+		}
+	}
+}

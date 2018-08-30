@@ -1,0 +1,4 @@
+@define-mixin fullWidth {
+	margin-left: -$gutter;
+	margin-right: -$gutter;
+}
